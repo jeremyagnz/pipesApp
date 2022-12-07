@@ -1,5 +1,19 @@
 <div class="text-layout">
-  <h1> {{nombre | titlecase}} </h1>
+  <h1>{{ nombre | titlecase }}</h1>
 </div>
 
-<button pButton (click)="mostrarNombre()" label="Cambiar Nombre"></button>
+<button
+  class="p-button-help"
+  pButton
+  (click)="mostrarNombre()"
+  label="Cambiar Nombre"
+  icon="pi pi-spin pi-spinner"
+  iconPos="right"
+></button>
+
+<p-card [header]="nombre | titlecase">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, accusantium.
+  Magnam a id omnis numquam quaerat laborum sint exercitationem hic quam
+  accusamus consectetur, temporibus dolore cupiditate, quae enim blanditiis!
+  Est.
+</p-card>
